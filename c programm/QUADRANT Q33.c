@@ -27,6 +27,6 @@ int main()
 	}
 	else
 	{
-		printf("Quadrant 4 (++)");
+		printf("Quadrant 4 (+-)");
 	}
 }

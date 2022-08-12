@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ass_6_Smallest_number
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // write a Programm to find smallest Number
+            int a, b, c;
+            Console.WriteLine("enter 1st number");
+            a=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter 2nd number");
+            b = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter 3rd number");
+            c = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine( "you entered number " + a);
+            Console.WriteLine("you entered number " + b);
+            Console.WriteLine("you entered number " + c);
+
+            if (a<b && a<c)
+            {
+                Console.WriteLine("smallest number is =" + a);
+            }
+           else if (b < a && b < c)
+            {
+                Console.WriteLine("smallest number is =" + b);
+            }
+
+          else  if (c < b && c < a)
+            {
+                Console.WriteLine("smallest number is =" + c);
+            }
+
+            Console.ReadLine();
+        }
+    }
+}

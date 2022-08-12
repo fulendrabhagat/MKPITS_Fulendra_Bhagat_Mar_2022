@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ass_3_Marks_total_grade
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int s1, s2, s3;
+
+            Console.WriteLine("Enter s1 Marks");
+            s1=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter s2 Marks");
+            s2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter s3 Marks");
+            s3 = Convert.ToInt32(Console.ReadLine());
+
+            int total = s1+ s2 + s3;
+            float per = ((total / 300.0f) * 100.0f);
+            Console.WriteLine("total marks = " + total);
+            Console.WriteLine("percetange = "+ per);
+
+            if (per >= 80)
+            {
+                Console.WriteLine("Destigntion");
+
+            }
+            else if(per>=60 && per<80)
+            {
+                Console.WriteLine(" GRADE A");
+            }
+            else if(per>=40 && per<60)
+            {
+                Console.WriteLine(" GRADE c");
+
+            }
+            else
+            {
+                Console.WriteLine("FAILED");
+            }
+            Console.ReadLine();
+
+           
+
+           
+
+        }
+    }
+}

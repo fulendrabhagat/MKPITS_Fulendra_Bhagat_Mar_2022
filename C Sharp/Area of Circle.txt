@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace As_CIRCLE_PROGRAM
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // to find area and circumference of circle
+            int radius;
+            Console.WriteLine("Enter Radius :_ ");
+            radius = Convert.ToInt32(Console.ReadLine());
+
+            float Area = 3.14f * radius * radius;
+            float cicrum = 2 * 3.14f * radius;
+
+            Console.WriteLine("Area of Circle : " + Area);
+            Console.ReadLine();
+
+
+            Console.WriteLine("circumference  of Circle : " + cicrum);
+            Console.ReadLine();
+
+
+        }
+    }
+}

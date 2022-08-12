@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ass_8_bonus_by_using_if_else
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string empname;
+            int empid;
+            string designation;
+            int bonus = 0;
+
+            Console.WriteLine("Enter Employee Name");
+            empname=Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter Employee ID");
+            empid=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Designation");
+            designation=Convert.ToString(Console.ReadLine());
+
+            if(designation == "manager")
+            {
+                bonus = 10000;
+
+            }
+            else if(designation == "cleark")
+            {
+                bonus = 50000;  
+            }
+            else if(designation =="peun")
+            {
+                bonus = 2000;
+            }
+            else
+            {
+                Console.WriteLine("invalid");
+            }
+            Console.WriteLine(" Employee Name" + empname);
+            Console.WriteLine(" Employee id" + empid);
+            Console.WriteLine(" Enter designation : " + designation);
+            Console.WriteLine("bonus " + bonus);
+            Console.ReadLine();
+        }
+
+
+    }
+}

@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ass_7_Employee_designation__by_using_if_else
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //calculate basic sallary
+
+            int emid, sallary;
+            float hra, da, total;
+            string name;
+
+            Console.WriteLine("Enter Employe ID : ");
+            emid=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Employe SALLARY : ");
+       sallary=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Employe Name :  ");
+            name = Convert.ToString(Console.ReadLine());
+
+            hra = sallary * 0.32f;
+            da = sallary * 0.45f;
+            total = sallary + hra + da;
+            Console.WriteLine(" Employe Name :" + name);
+            Console.WriteLine(" Employe ID : " + emid);
+            Console.WriteLine("Employe hra: " + hra);
+            Console.WriteLine("da "+da);
+            Console.WriteLine("total " + total);
+            Console.ReadLine();
+        }
+    }
+}

@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ass_2_Print_Greater_No
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //  write a pro to accept 2 no and print greater no.
+             int num1, num2;
+            Console.WriteLine("Enter 1st Number : ");
+            num1= Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter 2nd Number : ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            if(num1>num2)
+            {
+                Console.WriteLine("num1 is Greater  " + num1);
+
+            }
+            else
+            {
+                Console.WriteLine("num2 is gretaer " + num2);
+            }
+            Console.ReadLine();
+        }
+    }
+}

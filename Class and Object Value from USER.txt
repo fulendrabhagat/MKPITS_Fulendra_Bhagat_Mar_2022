@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_and_Object_Example_Taking_from_User
+
+
+{
+    class Employe
+    {
+        public int empid;
+        public string name;
+        public int sallary;
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //syntax classname objectname =new classname();'
+            Employe employe = new Employe();
+            Console.WriteLine("Enter Employee ID ");
+            employe.empid = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Employe Name ");
+            employe.name = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Enter Employe sallary ");
+            employe.sallary = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Employee ID " + employe.empid);
+            Console.WriteLine("Employe Name " + employe.name);
+
+            Console.WriteLine("Employe sallary" + employe.sallary);
+            Console.ReadLine();
+        }
+    }
+}
+

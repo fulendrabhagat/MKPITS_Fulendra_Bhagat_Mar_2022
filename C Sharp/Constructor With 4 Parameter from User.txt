@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace constructor_with_4_parameter_value_from_user
+{
+    class Book
+    {
+        int bookid;
+        string bookname;
+        string bookauthor;
+        int price;
+
+        // CONSTRUCTOR USING 4 PARAMETER VALUE TAKING FROM USER
+
+        public Book(int bookid, string bookname, string bookauthor, int price)
+        {
+          this.bookid = bookid;
+            this.bookname = bookname;   
+            this.bookauthor = bookauthor;
+            this.price = price;
+        }
+        public void display()
+        {
+            Console.WriteLine("Bookid " + bookid);
+            Console.WriteLine("Book Name" + bookname);
+            Console.WriteLine("Book Author"+ bookauthor);
+            Console.WriteLine("Book Price " + price);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter Book ID ");
+            int bookid = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Book Name ");
+            string bookname = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter BOOK Author");
+            string bookauthor=Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter Price");
+            int price = Convert.ToInt32(Console.ReadLine()); 
+            
+            Book book = new Book(bookid,bookname,bookauthor,price);//this will call parameterized constructor
+            book.display();
+            Console.ReadLine();
+
+        }
+    }
+}

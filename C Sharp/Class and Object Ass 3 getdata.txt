@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_and_Object_Ass_3_using_getdata
+{
+    class Product
+    {
+        int productid,productquantity;
+        string productname;
+        float productrate;
+
+        public void getproductdata()
+        {
+            Console.WriteLine("Enter Product id");
+            productid=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Product Name ");
+            productname=Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter Quantity ");
+            productquantity=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("product rate ");
+            productrate  = Convert.ToSingle(Console.ReadLine());
+
+        }
+        public void displayorder()
+        {
+            Console.WriteLine( "PRODUCT ID : " + productid);
+            Console.WriteLine("PRODUCT NAME : "+ productname);
+            Console.WriteLine("PRODUCT QUANTITY : " + productquantity);
+            Console.WriteLine( "PRODUCT RATE : " + productrate);
+            Console.ReadLine();
+        }
+
+
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Product product = new Product();
+            product.getproductdata();
+            product.displayorder();
+        }
+    }
+}

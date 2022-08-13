@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_and_Object_Ass_4_using_GETDAT_CAR_MODEL
+{
+    class Car
+    {
+        string model,make,fuel;
+         int seat;
+        float budget;
+
+        public void getcardata()
+        {
+            Console.WriteLine("Enter Car Model ");
+            model= Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter Car Make ");
+            make = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("what is  Car Fuel Type  ");
+            fuel = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine(" how much seater  ");
+            seat = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Car Budget ");
+            budget = Convert.ToSingle(Console.ReadLine());
+
+
+        }
+        public  void displaycardata()
+        {
+            Console.WriteLine("Car Model " + model);
+            Console.WriteLine("Car Make by " + make);
+            Console.WriteLine("Car fuel type " + fuel);
+            Console.WriteLine("Car seat "+ seat);
+            Console.WriteLine("Car Budget "+budget);
+            Console.ReadLine();
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Car car = new Car();
+            car.getcardata();
+            car.displaycardata();
+        }
+    }
+}

@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Constructor_with_no_parameter_Ass_1
+{
+    class Product
+    {
+        int productid;
+        string productname;
+        int productprice;
+        int productquantity;
+
+        // creating a constructor with no parameter
+
+    public Product()
+        {
+            productid = 1;
+            productname = "Apple";
+            productquantity = 2;
+            productprice = 35;
+        }
+
+        public void display()
+        {
+            Console.WriteLine( "Product ID "+productid);
+            Console.WriteLine("Product Name "+productname);
+            Console.WriteLine("Product price"+ productprice);
+            Console.WriteLine("Product quantity"+productquantity);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Product product = new Product();
+            product.display();
+            Console.ReadLine();
+        }
+    }
+}

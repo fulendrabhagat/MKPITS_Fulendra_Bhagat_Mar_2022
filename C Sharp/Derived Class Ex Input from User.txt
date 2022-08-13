@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace derived_class_ex_input_from_user
+{
+  public  class Person
+    {
+        public string name;
+        public int age;
+    }
+    public class student :Person
+    {
+        public int rollno;
+        public int marks;
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            student s = new student();
+            Console.WriteLine("Enter StudenT Name ");
+            s.name=Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter StudenT Age ");
+            s.age = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Student Roll No ");
+            s.rollno = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter StudenT Marks ");
+            s.marks = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Enter StudenT Name "+s.name);
+            Console.WriteLine("Enter StudenT Age "+s.age);
+            Console.WriteLine("Enter StudenT Roll No "+s.rollno);
+            Console.WriteLine("Enter StudenT Marks "+s.marks);
+            Console.ReadLine();
+
+
+
+
+
+
+        }
+    }
+}

@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ass_9_product_name__rate_quantity
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string proname;
+            int prorate, proquantity;
+
+            Console.WriteLine("Enter Product Name");
+            proname=Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter Product rate");
+            prorate = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Product Quantity");
+            proquantity = Convert.ToInt32(Console.ReadLine());
+
+            float total = prorate * proquantity;
+            Console.WriteLine("Product Name is " + proname);
+            Console.WriteLine("Toatal Amount - "+ total);
+            Console.ReadLine();
+
+        }
+    }
+}

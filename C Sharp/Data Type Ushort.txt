@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Data_Type_Ushort
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Data type U short
+            //range = 0 t0 65,535..
+
+            ushort s;
+            Console.WriteLine("enter u short number");
+            s = Convert.ToUInt16(Console.ReadLine());
+
+            Console.WriteLine(s);
+            Console.ReadLine();
+        }
+    }
+}

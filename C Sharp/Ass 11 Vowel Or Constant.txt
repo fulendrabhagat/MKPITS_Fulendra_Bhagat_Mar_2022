@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ass__11_Vowel_or_Constant
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //WAP character is Vowel or Constant
+            char ch;
+            Console.WriteLine("Enter Character");
+            ch= Convert.ToChar(Console.ReadLine());
+
+            if( ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' ||
+                ch == 'A' || ch == 'B' || ch == 'C' || ch == 'O' || ch == 'U')
+            {
+                Console.WriteLine("character is Vowel");
+
+            }
+            else
+            {
+                Console.WriteLine("constant");
+            }
+            Console.WriteLine("char = " + ch);
+            Console.ReadLine();
+        }
+    }
+}

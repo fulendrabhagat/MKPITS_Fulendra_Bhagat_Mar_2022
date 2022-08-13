@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ass_10_using_if_else_find_total_amount
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int quntity, rate;
+            string productname;
+            float total = 0;
+            float Total;
+            float dis;
+            Console.WriteLine("Enter  product name ");
+            productname = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Enter product rate  ");
+            rate = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter product quentity ");
+            quntity = Convert.ToInt32(Console.ReadLine());
+
+            total = rate * quntity;
+
+            if (total > 2000)
+            {
+                dis = 50 * total / 100;
+                Total = total - dis;
+            }
+            else
+            {
+                dis = 10 * total / 100;
+                Total = total - dis;
+            }
+
+            Console.WriteLine(" Name of product = " + productname);
+            Console.WriteLine(" Rate = " + rate);
+            Console.WriteLine(" Product quntity  = " + quntity);
+            Console.WriteLine(" total  = " + total);
+            Console.WriteLine(" Total with Discount = " + Total);
+
+            Console.ReadLine();
+        }
+    }
+}

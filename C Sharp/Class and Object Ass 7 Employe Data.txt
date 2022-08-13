@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace A_5_Q_8_company_payment_hra_da
+{
+    class Payment
+    {
+        public int empno;
+        public float basicsal, total, HRA, DA, TA;
+        public string enpname;
+    }
+    internal class Program
+    {
+        static void Main()
+        {
+            Payment paym = new Payment();
+
+            Console.WriteLine("Enter the employe no.:");
+            paym.empno = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the basic salary.:");
+            paym.basicsal = Convert.ToSingle(Console.ReadLine());
+
+            Console.WriteLine("Enter the employe name:");
+            paym.enpname = Console.ReadLine();
+
+            paym.HRA = paym.basicsal * 0.32f;
+            paym.DA = paym.basicsal * 0.45f;
+            paym.TA = paym.basicsal * 0.43f;
+
+            paym.total = paym.basicsal + paym.HRA + paym.DA + paym.TA;
+            Console.WriteLine("name : " + paym.enpname);
+            Console.WriteLine("id no. : " + paym.empno);
+            Console.WriteLine("salary : " + paym.basicsal);
+            Console.WriteLine("HRA : " + paym.HRA);
+            Console.WriteLine("DA : " + paym.DA);
+            Console.WriteLine("DA : " + paym.TA);
+
+            Console.WriteLine("Total salary of employe is : " + paym.total);
+            Console.ReadLine();
+        }
+    }
+}

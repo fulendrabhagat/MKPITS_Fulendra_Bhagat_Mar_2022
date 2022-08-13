@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Data_Type_Sbyte
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Data type sbyte 
+            // Range -128  to 127
+
+            sbyte b1;
+            Console.WriteLine("ENter Byte : ");
+            b1 = Convert.ToSByte(Console.ReadLine());
+
+            Console.WriteLine(b1);
+            Console.ReadLine();
+        }
+    }
+}

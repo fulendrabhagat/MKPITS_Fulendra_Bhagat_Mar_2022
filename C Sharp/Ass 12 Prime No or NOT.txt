@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ass_12_Prime_number_or_not
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // wrp to prime number or not
+            int num;
+            Console.WriteLine("Enter Number");
+            num=Convert.ToInt32(Console.ReadLine());
+
+            if(num%=0)
+            {
+                Console.WriteLine("number is prime");
+            }
+            else
+            {
+                Console.WriteLine("not a prime number");
+            }
+            Console.ReadLine();
+        }
+    }
+}

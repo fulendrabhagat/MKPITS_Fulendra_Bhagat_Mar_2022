@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace rectangle_formula
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+
+
+            // write a program of area of rectangle
+        {
+            int lenght, breadth;
+            Console.WriteLine("Enter lenght of rectangle : -");
+             lenght = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter breadth of rectangle : -");
+             breadth = Convert.ToInt32(Console.ReadLine());
+
+           int area = lenght * breadth;
+            Console.WriteLine("Area of Rectangle = " + area);
+            Console.ReadLine();
+            
+        }
+    }
+}

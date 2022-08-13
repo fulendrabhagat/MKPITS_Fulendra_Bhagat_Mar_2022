@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace substraction_programme
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num1 = 20, num2 = 45;
+            int sub = num1 - num2;
+            Console.WriteLine("SUBSTRACTION = " + sub);
+            Console.ReadLine();
+        }
+    }
+}

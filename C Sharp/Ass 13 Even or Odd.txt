@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ass_13_Even_Odd
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // wap number is even or odd
+
+            int num;
+            Console.WriteLine("Enter Number");
+            num=Convert.ToInt32(Console.ReadLine());
+
+            if(num % 2==0)
+            {
+                Console.WriteLine("Number is Even");
+            }
+            else
+            {
+                Console.WriteLine("Number is Odd");
+            }
+            Console.WriteLine("NUMBER ="+ num);
+            Console.ReadLine();
+        }
+    }
+}

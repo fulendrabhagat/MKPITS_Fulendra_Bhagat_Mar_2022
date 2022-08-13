@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_And_Object_Radius_of_Cicrcle_udsing_method
+{
+    class Cricle
+    {
+        float radius;
+        float circumference =0;
+        float Area=0;
+         public void getdatacic()
+        { 
+            circumference = 2 * 3.14 * radius * radius;
+            Console.WriteLine("circumference" +circumference);
+           
+
+        }
+        public void area()
+       
+        {
+            
+            Area= 3.14 * radius * radius;
+           
+            Console.WriteLine("area "+ Area);
+        }
+
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Cricle cricle = new Cricle();
+            Console.WriteLine("Enter Radius");
+            cricle.radius  = Convert.ToSingle(Console.ReadLine());
+            cricle.getdatacic();
+            cricle.area();
+            Console.ReadLine();
+
+        }
+    }
+}

@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Data_Type_one_byte
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Data type in c sharp
+            byte b1;
+            Console.WriteLine("enter bite");
+            b1= Convert.ToByte(Console.ReadLine());
+
+            Console.WriteLine("you Entered byte = " + b1);
+            Console.ReadLine();
+
+        }
+    }
+}

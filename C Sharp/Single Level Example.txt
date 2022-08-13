@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Singlr_Level_Inheritance_EXample
+{
+
+    class person
+    {
+           public int rollno;
+            public string name;
+    }
+    class student : person
+    {
+        public string section;
+
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            student s=new student();
+            s.rollno = 21;
+            s.name = "rahul";
+            s.section = "A";
+
+            Console.WriteLine("Roll No "+ s.rollno);
+            Console.WriteLine("Name " + s.name);
+            Console.WriteLine("Section "+s.section);
+            Console.ReadLine();
+
+        }
+    }
+}

@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Circle_Radius
+{
+
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace A_5_Q_5__add_sun_mul_operation
+    {
+        class Operation
+        {
+            public int r;
+
+            public float area = 0;
+            public float circ = 0;
+
+
+            public void areadata()
+            {
+                area = 3.14f * r * r;
+                Console.WriteLine("area of circle =" + area);
+            }
+
+
+            public void circdata()
+            {
+                circ = 2 * 3.14f * r;
+                Console.WriteLine("circumferance of circle =" + circ);
+            }
+
+
+
+        }
+        internal class Program
+        {
+            static void Main()
+            {
+                Operation op = new Operation();
+
+                Console.WriteLine("Enter radius");
+                op.r = Convert.ToInt16(Console.ReadLine());
+
+
+                op.areadata();
+                op.circdata();
+
+
+                Console.ReadLine();
+            }
+        }
+    }
+
+
+}

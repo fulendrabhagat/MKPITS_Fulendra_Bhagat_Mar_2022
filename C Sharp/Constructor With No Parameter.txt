@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_And_Object_using_Cons_Ass_3
+{
+    class Employe
+    {
+        int empid;
+        string empname;
+        string empdesignation;
+        int empsallary;
+
+        // constructor with no parameter
+        public Employe()
+        {
+            empid = 12;
+            empname = "rahul";
+            empdesignation = "Manager";
+            empsallary = 50000;
+        }
+        // constructor with 4 parameter
+        public Employe(int empid, string empname, string empdesignation, int empsallary)
+        {
+            this.empid = empid;
+            this.empname = empname;
+
+            this.empdesignation = empdesignation;
+            this.empsallary = empsallary;
+
+
+        }
+        public void display()
+        {
+            Console.WriteLine("employe id" + empid);
+            Console.WriteLine(empname);
+            Console.WriteLine(empdesignation);
+            Console.WriteLine(empsallary);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Employe e1 = new Employe();
+            e1.display();
+
+
+            Console.WriteLine("Enter Employe ID ");
+            int empid=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Employe Name");
+            string empname = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter Designation ");
+            string empdesignation = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter Sallary");
+            int empsallary = Convert.ToInt32(Console.ReadLine());
+            
+
+
+
+            Employe emp2 = new Employe(empid,empname,empdesignation,empsallary);
+            emp2.display();
+            Console.ReadLine();
+        }
+    }
+}

@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_And_Object_Ass_7
+{
+    class Student
+    {
+        public int rollno;
+        public string name;
+       public int mathmarks;
+       public int phymarks;
+       public int chemarks;
+        public int total=0;
+
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Student student = new Student();
+            Console.WriteLine("Enter Roll No ");
+            student.rollno=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Entet Student Name ");
+            student.name = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter Maths Marks ");
+            student.mathmarks=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Physics Marks ");
+            student.phymarks=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Chemistry Marks ");
+            student.chemarks=Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Roll No . " + student.rollno);
+            Console.WriteLine("Student Namwe "+ student.name);
+            Console.WriteLine("Maths Marks "+ student.mathmarks);
+            Console.WriteLine("Physics Marks " + student.phymarks);
+            Console.WriteLine("Chemistry  Marks " + student.chemarks);
+
+           // student.total=student.mathmarks+student.phymarks+student.chemarks;
+
+
+            Console.ReadLine();
+
+
+
+        }
+    }
+}

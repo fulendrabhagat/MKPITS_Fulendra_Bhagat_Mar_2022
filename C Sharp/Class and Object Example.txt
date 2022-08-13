@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_and_Object_example
+{
+    class Employe
+    {
+        public int empno;
+        public string emname;
+        public float sallary;
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //creating an object(instance) of employee class
+            //syntax classname objectname =new classname();
+            Employe employe=new Employe();
+            employe.empno = 124;
+            employe.emname = "rahul";
+            employe.sallary = 344566;
+
+            Console.WriteLine("Employe No" + employe.empno);
+            Console.WriteLine("Employe Name " + employe.emname);
+            Console.WriteLine("Employe sallary " + employe.sallary);
+            Console.ReadLine();
+        }
+    }
+}

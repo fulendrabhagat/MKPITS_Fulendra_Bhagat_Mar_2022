@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp19
+{
+    class person
+    {
+        string name = "mkpits";
+        public person()
+        {
+            Console.WriteLine("person class constructor called");
+        }
+        public void display()
+        {
+
+            Console.WriteLine(" base class field name = " + name);
+        }
+    }
+    class student : person
+    {
+        string name = "roshan";
+        public student()
+        {
+            Console.WriteLine("student class constructor called");
+        }
+        public void display()
+        {
+            //calling base class display method
+            base.display();
+            Console.WriteLine(" child class field name = " + name);
+        }
+
+    }
+    class Program
+
+    {
+        static void Main(string[] args)
+        {
+            student s = new student();
+            s.display();
+            Console.ReadLine();
+        }
+    }
+}

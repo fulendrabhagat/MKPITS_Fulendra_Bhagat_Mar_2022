@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace calls_the_method_of_base_class_Ex_2
+{
+    public class Animal
+    {
+        public void eat()
+        {
+            Console.WriteLine("eating");
+        }
+    }
+    public class cat : Animal
+    {
+        public void eat()
+        {
+            base.eat();
+            Console.WriteLine("eating ohhk");
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            cat cat = new cat();
+            cat.eat();
+            Console.ReadLine();
+        }
+    }
+}

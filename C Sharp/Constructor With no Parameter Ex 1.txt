@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Constructor_With_no_Parameter_Ex_1
+{
+    class Book
+    {
+        int bookid;
+        string bookname;
+        string aurthor;
+        int price;
+
+        //creating a Constructor with no parameter
+
+        public Book()
+        {
+            bookid = 23;
+            bookname = "Pride";
+            aurthor = "Sir dev";
+            price = 1000;
+
+        }
+        public void dispaly()
+        {
+            Console.WriteLine("Book ID " + bookid);
+            Console.WriteLine("Book Name "+bookname);
+            Console.WriteLine("Aurthor Name "+aurthor);
+            Console.WriteLine("Book Price "+price);
+            Console.ReadLine();
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Book book = new Book();
+            book.dispaly();
+          //  Console.ReadLine();
+        }
+    }
+}

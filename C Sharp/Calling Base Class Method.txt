@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Calling_base_class_method
+{
+     public class Person
+    {
+        public string Name = "mkpit";
+
+        public void display()
+        {
+            Console.WriteLine(" base class field name = " + Name);
+        }
+    }
+    public class Student : Person
+    {
+       
+        public string Name = "Raj";
+
+        public void display()
+        {
+            base.display();
+            Console.WriteLine("name = " + Name);
+        }
+
+     
+          
+        
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Student s = new Student();
+            s.display();
+            Console.ReadLine();
+
+        }
+    }
+}

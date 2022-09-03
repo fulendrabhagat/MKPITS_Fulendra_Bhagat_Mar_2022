@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace constructor
+{
+    class Product
+    {
+        int productid;
+        string productname;
+        int productquantity;
+        int productrate;
+
+        // constructor with no parameter
+        public Product()
+        {
+            productid = 1245;
+            productname = "rahul";
+            productquantity = 2;
+            productrate = 50000;
+        }
+        // constructor with 4 parameter
+        public Product(int productid, string productname, int productquantity, int productrate) 
+        {
+            this.productid = productid;
+            this.productname = productname;
+
+            this.productquantity = productquantity;
+            this.productrate = productrate;
+
+
+        }
+        public void display()
+        {
+            Console.WriteLine(productid);
+            Console.WriteLine(productname);
+            Console.WriteLine(productquantity);
+            Console.WriteLine(productrate);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Product e1 = new Product();
+            e1.display();
+
+
+            Console.WriteLine("Enter product ID ");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter product Name");
+            string name = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter quantity ");
+            int quantity= Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter rate");
+            int rate= Convert.ToInt32(Console.ReadLine());
+
+
+
+
+            Product emp2 = new Product(id,name,quantity,rate);
+            emp2.display();
+            Console.ReadLine();
+        }
+    }
+}

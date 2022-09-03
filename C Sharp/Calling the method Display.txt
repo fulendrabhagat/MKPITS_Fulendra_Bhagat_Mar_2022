@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace calling_the_method_display
+{
+    internal class sq
+    {
+        void square()
+        {
+            int i = 3;
+          
+           int sq = i * i;
+            Console.WriteLine("Sqare = "+ sq);
+            Console.ReadLine();
+        }
+        static void Main(string[] args)
+        {
+            sq p = new sq();
+            p.square();
+        }
+    }
+}

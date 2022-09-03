@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Acessing_field_of_the_base_class
+{
+
+    public class Animal
+    {
+        public string colour = "white";
+    }
+    public class cat : Animal
+    {
+        public string colour = "black";
+
+        public void showcolor()
+        {
+            Console.WriteLine(base.colour);
+            Console.WriteLine(colour);
+        }
+
+
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            cat d = new cat();
+            d.showcolor();
+            Console.ReadLine();
+        }
+    }
+}

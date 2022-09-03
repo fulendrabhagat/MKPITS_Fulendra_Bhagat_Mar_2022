@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Data_Type_short
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // Data type Short
+            // Range of short = -32,768 to 32,767
+
+            short s;
+            Console.WriteLine("Enter Short Number");
+            s= Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine(s);
+            Console.ReadLine();
+        }
+    }
+}

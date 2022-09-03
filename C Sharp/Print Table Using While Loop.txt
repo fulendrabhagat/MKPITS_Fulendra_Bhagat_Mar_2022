@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Print_Table_Using_While_Loop
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int number, multi=1;
+            Console.WriteLine("Enter Number");
+            number=Convert.ToInt32(Console.ReadLine());
+
+            while( multi <=10)
+            {
+                Console.WriteLine("{0} *{1}={2}",number,multi,(number*multi));
+                multi++;
+            }
+            Console.ReadLine();
+        }
+    }
+}

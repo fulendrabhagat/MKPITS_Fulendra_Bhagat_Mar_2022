@@ -1,0 +1,57 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Single_int_Example_2
+{
+    public class Person
+    {
+        public string Name;
+        public int age;
+
+        public void getdata(string Name, int age)
+        {
+            this.Name = Name;
+            this.age = age;
+        }
+        public void dispalydata()
+        {
+            Console.WriteLine("Name " + Name);
+            Console.WriteLine("Age " + age);
+        }
+    }
+        public class Student :  Person
+        {
+            public int rollno;
+            public char section;
+
+            public void studentdata(int rollno,char section)
+            {
+                this.rollno = rollno;
+                this.section = section; 
+            }
+            public void displaystudentdata()
+            {
+                Console.WriteLine("Roll No ");
+                Console.WriteLine("Section ");
+            }
+        }
+        
+    
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+         Student student = new Student();
+            student.getdata("raj", 21);
+            student.dispalydata();
+
+            student.studentdata(36,'A');
+            student.displaystudentdata();
+            Console.ReadLine();
+            
+        }
+    }
+}

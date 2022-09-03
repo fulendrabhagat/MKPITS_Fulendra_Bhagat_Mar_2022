@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace constructor_with_four_parameter
+{
+    class Book
+    {
+        int bookid;
+        string booktitel;
+        string bookauthor;
+        int price;
+
+        // create class book and constructor with no parameters and another constructor with 4 parameters
+
+        public Book()
+        {
+            bookid = 12;
+            booktitel = "ravan";
+            bookauthor = "rahul";
+            price = 188;
+        }
+        public Book(int bookid, string booktitel, string bookauthor, int price)
+        {
+            this.bookid = bookid;
+            this.booktitel = booktitel;
+            this.bookauthor = bookauthor;
+            this.price = price;
+        }
+        public void display()
+        {
+            Console.WriteLine("Book ID" + bookid);
+            Console.WriteLine("Book Name"+ booktitel);
+            Console.WriteLine("Book Author" + bookauthor);
+            Console.WriteLine("Book Price " + price);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Book book = new Book();
+            book.display();
+
+           
+                Book b2=new Book(113, "rahul", "bhagat", 12);
+            b2.display();
+            Console.ReadLine();
+        }
+    }
+}

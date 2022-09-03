@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Accesing_field_of_the_base_class_Example_2
+{
+    public class Person
+    {
+        public string Name = "rahul";
+    }
+    public class Student : Person
+    {
+        public string Name = "fulendra";
+
+        public void  showdata()
+        {
+            Console.WriteLine("name "+ Name);
+            Console.WriteLine("name "+ base.Name);
+        }
+    }
+        internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Student s = new Student();
+            s.showdata();
+            Console.ReadLine();
+        }
+    }
+}

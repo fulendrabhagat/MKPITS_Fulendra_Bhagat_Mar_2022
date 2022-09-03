@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace calculating_sallary_by_using_switch_case
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int empno, basic;
+
+            float hra = 0;
+            float  da=0;
+
+            Console.WriteLine("Enter empo");
+            empno = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter basic");
+            basic = Convert.ToInt32(Console.ReadLine());
+
+            switch (basic)
+            {
+                case 25000:
+                    da = basic * 0.32f;
+                    hra = basic * 0.45f;
+                    break;
+
+                case 5000:
+                    da = basic * 0.32f;
+                    hra = basic * 0.45f;
+                    break;
+            }
+            float total = basic + hra + da;
+            Console.WriteLine("empo" + empno);
+            Console.WriteLine("hra" + hra);
+            Console.WriteLine("da"+da);
+            Console.WriteLine("total sallary " + total);
+            Console.ReadLine();
+
+
+        }
+    }
+}

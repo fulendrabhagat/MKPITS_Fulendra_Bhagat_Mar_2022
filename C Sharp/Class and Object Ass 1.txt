@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Class_and_Object_Ass_1
+{
+
+    class Customer
+    {
+        public int customerid;
+        public string customername;
+        public string customeradd;
+        public int custmorconatact;
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Customer customer = new Customer();
+            Console.WriteLine("Enter Customer ID");
+            customer.customerid=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Customer Name ");
+            customer.customername=Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter Customer Address ");
+            customer.customeradd=Convert.ToString(Console.ReadLine());
+
+
+            Console.WriteLine("Enter Customer Contact No. ");
+            customer.custmorconatact=Convert.ToInt32(Console.ReadLine());
+
+            
+
+            Console.WriteLine(" Customer ID : " + customer.customerid);
+            Console.WriteLine(" Customer Name  : " + customer.customername);
+            Console.WriteLine(" Customer  Address : " + customer.customeradd);
+            Console.WriteLine(" Customer Contact No : " + customer.custmorconatact);
+            Console.ReadLine();
+            Console.ReadKey();
+
+
+
+        }
+    }
+}

@@ -1,0 +1,82 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Multilevel_inheritance_Ex_2
+{
+    public class Person
+    {
+        public string name;
+        public string Address;
+
+        // constructor method
+
+        public void persondata(string name, string Address)
+        {
+            this.name = name;
+            this.Address = Address;
+        }
+        public void disdata()
+        {
+            Console.WriteLine("Name " + name);
+            Console.WriteLine("Address" + Address);
+        }
+    }
+    public class employe : Person
+    {
+        public string designation;
+        public int sallary;
+
+        //method
+        public void employedata(string designation, int sallary)
+        {
+            this.designation = designation;
+            this.sallary = sallary;
+
+
+        }
+        public void displayempdata()
+        {
+            Console.WriteLine("Designation " + designation);
+            Console.WriteLine("Sallary " + sallary);
+        }
+
+
+    }
+    public class parttimeemp : employe
+    {
+        public int working_hr;
+
+        public void partdata(int working_hr)
+        {
+            this.working_hr = working_hr;
+        }
+        public void displaypartdata()
+        {
+            Console.WriteLine("Working Hour " + working_hr);
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            parttimeemp p = new parttimeemp();
+            p.persondata("rahul", "Nagpur");
+            p.disdata();
+
+            p.employedata("Manager", 23000);
+            p.displayempdata();
+
+            p.partdata(2);
+            p.displaypartdata();
+
+            Console.ReadLine();
+
+
+
+        }
+    }
+}
+

@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace For_Each_loop_String_Example
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            //example of foreach loop
+            //create an array of 5 element
+            string[] num = new string[5];
+
+            num[0] = "rit";
+            num[1] = "rahul";
+            num[2] = "bhagat";
+            num[3] = "bhagat";
+            num[4] = "bhagat";
+            //using foreach loop to iterate over the elements of an array
+            foreach (string i in num)
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }
+}

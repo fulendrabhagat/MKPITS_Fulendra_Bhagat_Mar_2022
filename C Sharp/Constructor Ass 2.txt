@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Constructor_Ass_2
+{
+    class Employee
+    {
+        int employeid;
+        string employename;
+        string designation;
+        int sallary;
+
+        public Employee()
+        {
+            employeid = 34;
+            employename = "Rahul";
+            designation = "Manager";
+            sallary = 21000;
+        }
+        public void display()
+        {
+            Console.WriteLine("Employee Id " + employeid);
+            Console.WriteLine("Employee Name " + employename);
+            Console.WriteLine("Designation " + designation);
+            Console.WriteLine("Employee Sallart " + sallary);
+
+        }
+    }
+
+
+        internal class Program
+        {
+            static void Main(string[] args)
+            {
+                Employee employee = new Employee();
+                employee.display();
+                Console.ReadLine();
+            }
+        }
+    }

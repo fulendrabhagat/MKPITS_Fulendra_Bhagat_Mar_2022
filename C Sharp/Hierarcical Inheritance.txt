@@ -1,0 +1,97 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Hierarchical_inheritance_example
+{
+    public class Person
+    {
+        public string name;
+        public int age;
+        public string address ;
+
+        // Constructor method
+
+        public void getpersondata(string name, int age, string address)
+        {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+        public void displaypersondata()
+        {
+
+            Console.WriteLine("Name " + name);
+            Console.WriteLine("Age  " + age);
+            Console.WriteLine("Address " + address);
+
+        }
+        public class student : Person
+        {
+            public int rollno;
+            public int marks;
+            // constructor ,method,fuction
+            public void getstudentdata(int rollno, int marks)
+            {
+                this.rollno = rollno;
+                this.marks = marks;
+
+
+            }
+            public void displaystudentdata()
+            {
+                Console.WriteLine("Roll No " + rollno);
+                Console.WriteLine("Marks" + marks);
+            }
+
+        }
+        public class employe : Person
+        {
+            public string designation;
+            public int sallary ;
+
+            public void getemployedata(string designation, int sallary)
+            {
+                this.designation = designation;
+                this.sallary = sallary;
+            }
+            public void displayemployedata()
+            {
+                Console.WriteLine("Designation " + designation);
+                Console.WriteLine("Sallary " + sallary);
+            }
+        }
+        internal class Program
+        {
+            static void Main(string[] args)
+            {
+              Person p=new Person();
+                p.getpersondata("Rahul", 21, "Nagpur");
+                p.displaypersondata();
+
+                Console.WriteLine("---------------Student Deteils---------");
+
+                student s = new student();
+                s.getstudentdata(21, 35);
+                s.displaystudentdata();
+
+                Console.WriteLine("----------Employe Deteils------------");
+
+                employe e = new employe();
+                e.getemployedata("manager", 24567);
+                e.displayemployedata();
+
+
+
+
+
+                Console.ReadLine();
+
+
+
+            }
+        }
+    }
+}
